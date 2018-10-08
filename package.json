@@ -22,7 +22,7 @@
     "postgres",
     "mysql"
   ],
-  "author": "Yoni Jah <yoni.jah@non.co.il>",
+  "author": "ccckblaze <ccckblaze@sina.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ccckblaze/node_sequelize_acl/issues"
