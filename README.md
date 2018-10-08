@@ -1,5 +1,5 @@
 # Node Acl Sequelize Backend
-_acl-sequelize_
+_sequelize-acl_
 
 [Sequelize](https://github.com/sequelize/sequelize) is an SQL ORM that supports many sql servers (mysql, mariadb, sqlite, postgres and mssql) [OptimalBits/node_acl](https://github.com/OptimalBits/node_acl).
 
@@ -15,14 +15,14 @@ Using npm:
 npm install acl
 npm install sequelize
 npm install [DIALECT] #One of the supported Sequelize dialects
-npm install acl-sequelize
+npm install sequelize-acl
 ```
 
 ## Getting Started
 ```javascript
     Acl       = require('acl');
     Sequelize = require('sequelize'),
-    AclSeq    = require('acl-sequelize');
+    AclSeq    = require('sequelize-acl');
     db        = new Sequelize( 'DB', 'USER', 'PASSWORD'),    
     acl       = new Acl(new AclSeq(db, { prefix: 'acl_' }));
 ```
@@ -35,8 +35,8 @@ The second parameter sent to the backend constructor can have supports the follo
 `schema` - Object with Sequlize Schema settings per bucket (meta|parents|permissions|resources|roles|users ) to override default schema
 
 ## Creating tables manually
-ACL-Sequelize will automatically register and sync needed schemes
-if for some reason you need to register your own tables and the schema override parameters are not good enough you can register the schemes yourself before instiating the `backend`. ACL-Sequelize will use the existing schema instead of adding a new one (Register schema should follow `prefix`+`bucket_name` convention and have key, value columns)
+Sequelize-acl will automatically register and sync needed schemes
+if for some reason you need to register your own tables and the schema override parameters are not good enough you can register the schemes yourself before instiating the `backend`. Sequelize-acl will use the existing schema instead of adding a new one (Register schema should follow `prefix`+`bucket_name` convention and have key, value columns)
 
 ## Testing
 ### Test setup
