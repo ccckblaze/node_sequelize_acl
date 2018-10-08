@@ -1,6 +1,6 @@
 {
-  "name": "acl-sequelize",
-  "version": "0.2.1",
+  "name": "sequelize-acl",
+  "version": "0.2.2",
   "description": "Node Acl Sequelize Backend",
   "main": "index.js",
   "directories": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yonjah/node_acl_sequelize"
+    "url": "https://github.com/ccckblaze/node_sequelize_acl"
   },
   "keywords": [
     "middleware",
@@ -25,7 +25,7 @@
   "author": "Yoni Jah <yoni.jah@non.co.il>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yonjah/node_acl_sequelize/issues"
+    "url": "https://github.com/ccckblaze/node_sequelize_acl/issues"
   },
   "devDependencies": {
     "acl": "^0.4.7",
@@ -37,7 +37,7 @@
     "nyc": "^11.2.1",
     "sequelize": ">=3.0.0"
   },
-  "homepage": "https://github.com/yonjah/node_acl_sequelize",
+  "homepage": "https://github.com/ccckblaze/node_sequelize_acl",
   "dependencies": {
     "lodash": "^4.17.5"
   },
