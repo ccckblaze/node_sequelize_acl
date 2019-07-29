@@ -1,6 +1,12 @@
 # Node Acl Sequelize Backend
 _sequelize-acl_
 
+[![npm version](https://img.shields.io/npm/v/acl-sequelize.svg)](https://www.npmjs.com/package/acl-sequelize)
+[![Build Status](https://travis-ci.org/yonjah/node_acl_sequelize.svg?branch=master)](https://travis-ci.org/yonjah/node_acl_sequelize)
+[![codecov](https://codecov.io/gh/yonjah/node_acl_sequelize/branch/master/graph/badge.svg)](https://codecov.io/gh/yonjah/node_acl_sequelize)
+[![Known Vulnerabilities](https://snyk.io/test/npm/acl-sequelize/badge.svg)](https://snyk.io/test/npm/acl-sequelize)
+[![License](https://img.shields.io/npm/l/acl-sequelize.svg?maxAge=2592000?style=plastic)](https://github.com/yonjah/node_acl_sequelize/blob/master/LICENSE)
+
 [Sequelize](https://github.com/sequelize/sequelize) is an SQL ORM that supports many sql servers (mysql, mariadb, sqlite, postgres and mssql) [OptimalBits/node_acl](https://github.com/OptimalBits/node_acl).
 
 ## Features & Documentation
@@ -31,7 +37,9 @@ npm install sequelize-acl
 The second parameter sent to the backend constructor can have supports the following options -
 
 `prefix` - prefix for table names in the database _default ''_
+
 `defaultSchema` - Sequlize Schema settings for all buckets with no specific schema _default schema has two columns key: Primary STRING, value: STRING_
+
 `schema` - Object with Sequlize Schema settings per bucket (meta|parents|permissions|resources|roles|users ) to override default schema
 
 ## Creating tables manually
@@ -47,6 +55,12 @@ The current setting expect a local `mysql` server with passwordless `root` accou
 ```javascript
 npm test
 ```
+
+### Changelog
+See [changelog file](CHANGELOG.md)
+
+### Security issues
+This project participates in the Responsible Disclosure Policy program for the Node.js Security Ecosystem. see [security.md](security.md) for more info
 
 ## Known Issues
 - default schema limit each column 255 chars, if you have a lot of resources / permissions / complex hierarchy, You'll probably need to set your own schema with higher limit.

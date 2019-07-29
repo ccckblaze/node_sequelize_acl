@@ -1,6 +1,6 @@
 {
   "name": "sequelize-acl",
-  "version": "0.2.3",
+  "version": "0.3.6",  
   "description": "Node Acl Sequelize Backend",
   "main": "index.js",
   "directories": {
@@ -28,21 +28,22 @@
     "url": "https://github.com/ccckblaze/node_sequelize_acl/issues"
   },
   "devDependencies": {
-    "acl": "^0.4.7",
-    "chai": "~1.10.0",
-    "eslint": "^4.8.0",
-    "mocha": "^2.0.1",
-    "mysql": "^2.6.1",
-    "mysql2": "^1.4.2",
-    "nyc": "^11.2.1",
-    "sequelize": ">=3.0.0"
+    "acl": "^0.4.11",
+    "chai": "~4.2.0",
+    "conventional-changelog-cli": "^2.0.21",
+    "eslint": "^6.0.1",
+    "mocha": "^6.1.4",
+    "mysql": "^2.17.1",
+    "mysql2": "^1.6.5",
+    "nyc": "^14.1.1",
+    "sequelize": "^5.9.4"
   },
   "homepage": "https://github.com/ccckblaze/node_sequelize_acl",
   "dependencies": {
-    "lodash": "^4.17.5"
+    "lodash": "^4.17.13"
   },
   "peerDependencies": {
     "sequelize": ">=3.0.0",
-    "acl": "^0.4.7"
+    "acl": "^0.4.11"
   }
 }
