@@ -1,6 +1,6 @@
 {
   "name": "sequelize-acl",
-  "version": "0.3.6",  
+  "version": "0.3.7",  
   "description": "Node Acl Sequelize Backend",
   "main": "index.js",
   "directories": {
